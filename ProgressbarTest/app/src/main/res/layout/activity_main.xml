@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="video.com.progressbartest.MainActivity"
+    android:background="@drawable/bg_loading">
+
+    <ProgressBar
+        android:id="@+id/my_progress"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/bar"/>
+
+    <ImageView
+        android:id="@+id/ivGif"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <ImageView
+        android:id="@+id/black"
+        android:layout_width="280dp"
+        android:layout_height="28dp"
+        android:background="@drawable/black"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp" />
+
+    <ProgressBar
+        android:id="@+id/loading_progress"
+        android:layout_width="260dp"
+        android:layout_height="11dp"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/bar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="129dp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/prince"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/princess"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/prince" />
+
+
+    <ImageView
+        android:id="@+id/princess"
+        android:layout_width="25dp"
+        android:layout_height="37dp"
+        android:background="@drawable/princess"
+        android:layout_above="@+id/black"
+        android:layout_toRightOf="@+id/black"
+        android:layout_toEndOf="@+id/black" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6a6a6a"
+        android:text="爱上都风口浪尖爱上都"
+        android:layout_alignTop="@+id/loading_progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+</RelativeLayout>
